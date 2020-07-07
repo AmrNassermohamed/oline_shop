@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aroma Shop - Login</title>
+	<link rel="icon" href="img/Fevicon.png" type="image/png">
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
+  <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+  
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!--================ Start Header Menu Area =================-->
+	<header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand logo_h" href="/"><img src="img/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Shop</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="category.html">Shop Category</a></li>
+                  <li class="nav-item"><a class="nav-link" href="single-product.html">Blog Details</a></li>
+                  <li class="nav-item"><a class="nav-link" href="checkout.html">Product Checkout</a></li>
+                  <li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
+                </ul>
+							</li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Blog</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+                </ul>
+							</li>
+							<li class="nav-item active submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/tracking-order">Tracking</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <ul class="nav-shop">
+              <li class="nav-item"><button><i class="ti-search"></i></button></li>
+              <li class="nav-item"><button><i class="ti-shopping-cart"></i><span class="nav-shop__circle">3</span></button> </li>
+              <li class="nav-item"><a class="button button-header" href="#">Buy Now</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+	<!--================ End Header Menu Area =================-->
+  
+  <!-- ================ start banner area ================= -->	
+	<section class="blog-banner-area" id="category">
+		<div class="container h-100">
+			<div class="blog-banner">
+				<div class="text-center">
+					<h1>Manage product</h1>
+					<nav aria-label="breadcrumb" class="banner-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Login/Register</li>
+            </ol>
+          </nav>
+				</div>
+			</div>
+    </div>
+	</section>
+	
+  
+  <!--================Login Box Area =================-->
+	<section class="login_box_area section-margin">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="login_box_img">
+						<div class="hover">
+							<h4>New  catagories</h4>
+							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="login_form_inner">
+						<h3>Add new catagories</h3>
+						<form class="row login_form" action="/add" id="contactForm"  method="POST">
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" id="name" name="namecata" placeholder="catagories" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+							</div>
+							<div>
+								
+							</div>
+							<div class="col-md-12 form-group">
+								<button type="submit" value="submit" class="button button-login w-100">Add new catagories</button>
+								
+							</div>
+						</form>			
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!------------------------------------>
+	<section class="login_box_area section-margin">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="login_box_img">
+						<div class="hover">
+							<h4>New  models</h4>
+							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="login_form_inner">
+						<h3>Add new depaertments</h3>
+						<form class="row login_form" action="/add_departments" id="contactForm"  method="POST">
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" id="name" name="departments" placeholder="departments" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+								
+							</div>
+							<div>
+								
+							</div>
+							<div class="col-md-12 form-group">
+								<button type="submit" value="submit" class="btn">Add new departments</button>
+								
+							</div>
+						</form>			
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+ 
+
+  
+  <!--================Login Box Area =================-->
+	<section class="login_box_area section-margin">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="login_box_img">
+						<div class="hover">
+							<h4>New to our website?</h4>
+							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
+							<a class="button button-account" href="register.html">Create an Account</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="login_form_inner">
+						<h3>Add color</h3>
+						<form class="row login_form" action="/save_color" id="contactForm"  method="POST">
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" id="name" name="color" placeholder="color" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+							</div>
+													
+													<div class="col-md-12 form-group">
+								<button type="submit" value="submit" class="button button-login w-100">choose color</button>
+							
+							</div>
+						</form>
+					
+				
+			
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--------------------------------------------------------------------------------------------->
+	<section class="login_box_area section-margin">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="login_box_img">
+						<div class="hover">
+							<h4>New to our website?</h4>
+							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
+							<a class="button button-account" href="register.html">Create an Account</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="login_form_inner">
+						<h3>Add new departments type</h3>
+						<form class="row login_form" action="/save_department_type" id="contactForm"  method="POST">
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" id="name" name="departments_type" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+							</div>
+						
+							<div class = "row">
+								<div class="hover">
+									<h5>choose departments type</h5>
+								</div>
+							<div class="col-lg-5 form-group " style="width: 180px;" >
+								
+                                <select class="country_select" name="department_id">
+                                	<% if(departmentss) { %>
+									<% for (var i =0; i <departmentss.length;  i++ ) { %>
+									<option name="<%= departmentss[i]._id %>" value="<%= departmentss[i]._id %>" style="color: black;"><%= departmentss[i].name %> 
+									
+									</option>
+ 								<% } %>
+								</select>
+								<% } %>
+							</div>
+							</div>
+						
+							<div class="col-md-12 form-group">
+								<button type="submit" value="submit" class="button button-login w-100">choose departments type</button>
+							
+							</div>
+						</form>
+					
+				
+			
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Login Box Area =================-->
+
+	<section class="login_box_area section-margin">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="login_box_img">
+						<div class="hover">
+							<h4>New  sizes</h4>
+							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="login_form_inner">
+						<h3>Add new Size</h3>
+						<form class="row login_form" action="/add_size" id="contactForm"  method="POST">
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" id="name" name="name_size" placeholder="departments" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+								
+							</div>
+							<div>
+								
+							</div>
+							<div class="col-md-12 form-group">
+								<button type="submit" value="submit" class="button button-login w-100">Add new size</button>
+								
+							</div>
+						</form>			
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="login_box_area section-margin" style="height:  900px">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 " style="height:  900px">
+					<div class="login_box_img">
+						<div class="hover">
+							<h4>New  products</h4>
+							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" >
+					<div class="login_form_inner" >
+						<h3>Add new products</h3>
+						<form class="row login_form"  id="contactForm"   method="POST" >
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" id="name" name="name_product" placeholder="name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+							</div>
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" id="name" name="price_product" placeholder="price" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+							</div>
+							<div class = "row form" style="padding-left: 35px;">
+								<div class="hover">
+									<h5>choose      catagory    type</h5>
+								</div>
+							<div class="col-lg-6 form-group " style="width: 180px;" >
+								
+                                <select class="country_select" name="catagories_id">
+                                	<% if(catagories) { %>
+									<% for (var i =0; i <catagories.length;  i++ ) { %>
+									<option name="<%= catagories[i]._id %>" value="<%= catagories[i]._id %>" style="color: black;"><%= catagories[i].name %> 
+									
+									</option>
+ 								<% } %>
+								</select>
+								<% } %>
+							</div>
+							</div>
+							<div class = "row form" style="padding-left: 35px;">
+								<div class="hover">
+									<h5>choose colors type</h5>
+								</div>
+							<div class="col-lg-5 form-group " style="width: 180px;" >
+								
+                                <select class="country_select" name="color_id">
+                                	<% if(color) { %>
+									<% for (var i =0; i <color.length;  i++ ) { %>
+									<option name="<%= color[i]._id %>" value="<%= color[i]._id %>" style="color: black;"><%= color[i].name %> 
+									
+									</option>
+ 								<% } %>
+								</select>
+								<% } %>
+							</div>
+							</div>
+							<div class = "row form" style="padding-left: 35px;">
+								<div class="hover">
+									<h5>choose department_type</h5>
+								</div>
+							<div class="col-lg-5 form-group " style="width: 180px;" >
+								
+                                <select class="country_select" name="model_id">
+                                	<% if(model) { %>
+									<% for (var i =0; i <model.length;  i++ ) { %>
+										<option name="<%= model[i]._id %>" value="<%= model[i]._id %>" style="color: black;"><%= model[i].name %> 
+									
+									
+									</option>
+ 								<% } %>
+								</select>
+								<% } %>
+							</div>
+							</div>
+							<div class = "row form" style="padding-left: 35px;">
+								
+							<div class="col-lg-4 form-group " style="width: 180px;" >
+								<form  id="contactForm"  action="/add_number_of_size" method="POST">
+                                <select class="country_select" name="sizes_id">
+                                	<% if(sizes) { %>
+									<% for (var i =0; i <sizes.length;  i++ ) { %>
+										<option  name="<%= sizes[i]._id %>" value="<%= sizes[i]._id %>" style="color: black;"><%= sizes[i].name %> 
+									
+									</option>
+ 								<% } %>
+								</select>
+								<% } %>
+							</div>
+							<div class=" form-group">
+								<input type="text" class="form-control"  name="number_sizes" placeholder="number of size" id="box"  >
+							</div>
+
+							
+							</div>
+							<% if(items.length != 0) { %>
+								<% for (var i =0; i <items.length;  i++ ) { %>
+									<% for (var g =0; g <sizes.length;  g++ ) { %>
+										<% if(items[i].size === sizes[g]._id) { %>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"> <%= sizes[i].size %> 
+				
+								</li>
+								
+							  </ul>
+							  <% } } } }%>
+                       <div class="col-md-12 form-group">
+								<button type="sumbit" value="button" class="button button-login w-100" formaction="/add_number_of_size" >Add new Size</button>
+								
+							</div>
+						
+						<div class="col-lg-12">
+								<div class="form-group">
+									<textarea class="form-control different-control w-100" name="Description" id="message" cols="30" rows="5" placeholder="Enter Description"></textarea>
+								</div>
+							  </div>
+							
+							  <div class="box btn btn-sm ">
+								  
+								<input type="file"placeholder="image"  name="images" id="images" class="inputfile inputfile-5" data-multiple-caption="{count} files selected"   style="color: blue;text-align: center;"/>
+								<label for="file-6"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span></span></label>
+							</div>
+							<div class="col-md-12 form-group">
+								<button type="sumbit" value="button" class="button button-login w-100" formaction="/add_product" >Add new Size</button>
+								
+							</div>
+							<% if(product_model !=0) { %>
+								<p class="alert alert-primary">
+									<%= product_model %> 
+								</p>
+								<% } %>
+						</form>			
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <!--================ Start footer Area  =================-->	
+	<footer>
+		<div class="footer-area footer-only">
+			<div class="container">
+				<div class="row section_gap">
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets ">
+							<h4 class="footer_title large_title">Our Mission</h4>
+							<p>
+								So seed seed green that winged cattle in. Gathering thing made fly you're no 
+								divided deep moved us lan Gathering thing us land years living.
+							</p>
+							<p>
+								So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep moved 
+							</p>
+						</div>
+					</div>
+					<div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Quick Links</h4>
+							<ul class="list">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Product</a></li>
+								<li><a href="#">Brand</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget instafeed">
+							<h4 class="footer_title">Gallery</h4>
+							<ul class="list instafeed d-flex flex-wrap">
+								<li><img src="img/gallery/r1.jpg" alt=""></li>
+								<li><img src="img/gallery/r2.jpg" alt=""></li>
+								<li><img src="img/gallery/r3.jpg" alt=""></li>
+								<li><img src="img/gallery/r5.jpg" alt=""></li>
+								<li><img src="img/gallery/r7.jpg" alt=""></li>
+								<li><img src="img/gallery/r8.jpg" alt=""></li>
+							</ul>
+						</div>
+					</div>
+					<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Contact Us</h4>
+							<div class="ml-40">
+								<p class="sm-head">
+									<span class="fa fa-location-arrow"></span>
+									Head Office
+								</p>
+								<p>123, Main Street, Your City</p>
+	
+								<p class="sm-head">
+									<span class="fa fa-phone"></span>
+									Phone Number
+								</p>
+								<p>
+									+123 456 7890 <br>
+									+123 456 7890
+								</p>
+	
+								<p class="sm-head">
+									<span class="fa fa-envelope"></span>
+									Email
+								</p>
+								<p>
+									free@infoexample.com <br>
+									www.infoexample.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+
+			<div class="container">
+				<div class="row d-flex">
+					<p class="col-lg-12 footer-text text-center">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================ End footer Area  =================-->
+<style>
+	.file-field.big .file-path-wrapper {
+height: 3.2rem; }
+.file-field.big .file-path-wrapper .file-path {
+height: 3rem; }
+</style>
+
+
+  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendors/skrollr.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+  <script src="vendors/jquery.ajaxchimp.min.js"></script>
+  <script src="vendors/mail-script.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
